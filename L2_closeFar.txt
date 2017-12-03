@@ -1,0 +1,22 @@
+//Logic-2 > closeFar
+public boolean closeFar(int a, int b, int c) {
+  if(a == b){
+    if(a - c >= 2 && b - c >= 2){
+      return true;
+    }
+    else return false;
+  }
+  else if(a - b == 1 || a - b == -1){
+    if ((a - c >= 2 || a - c <= -2) && (b - c >= 2 || b - c <= -2)) {
+      return true;
+    }
+    else return false;
+  }
+  else if (a - c == 1 || a - c == -1){
+    if((a - b >= 2 || a - b <= -2) && (c - b >= 2 || c - b <= -2)){
+      return true;
+    }
+    else return false;
+  }
+  else return false;
+}

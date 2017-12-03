@@ -1,0 +1,12 @@
+//Logic-2 > roundSum
+public int roundSum(int a, int b, int c) {
+  int x = round10(a) + round10(b) + round10(c);
+  return x;
+}
+
+public int round10(int num){
+  if((num % 10) >= 5){
+    return (num / 10 + 1) * 10;
+  }
+  else return (num / 10) * 10;
+}

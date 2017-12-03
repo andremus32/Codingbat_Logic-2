@@ -1,0 +1,4 @@
+//Logic-2 > evenlySpaced
+public boolean evenlySpaced(int a, int b, int c) {
+  return(a - b == b - c) || (c - a == b - c) || (a - c == b - a); 
+}

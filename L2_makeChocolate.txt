@@ -1,0 +1,15 @@
+//Logic-2 > makeChocolate
+public int makeChocolate(int small, int big, int goal) {
+  int needBig = goal / 5;
+  if(big * 5 + small < goal){
+    return -1;
+  }
+  else if(big * 5 > goal){
+    if ((goal - needBig * 5) <= small){
+      return goal - needBig * 5;
+    }
+    else return -1;
+  }
+  else 
+  return goal - big * 5;
+}

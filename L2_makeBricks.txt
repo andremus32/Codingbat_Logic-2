@@ -1,0 +1,11 @@
+//Logic-2 > makeBricks
+public boolean makeBricks(int small, int big, int goal) {
+  int needBig = goal / 5;
+  if(big * 5 + small >= goal && big * 5 <= goal){
+    return true;
+    }
+  else if(big >= needBig && needBig * 5 + small >= goal){
+      return true;
+    }
+  else return false;
+}

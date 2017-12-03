@@ -1,0 +1,12 @@
+//Logic-2 > noTeenSum
+public int noTeenSum(int a, int b, int c) {
+  int x = fixTeen(a) + fixTeen(b) + fixTeen(c);
+  return x;
+}
+
+public int fixTeen(int n){
+  if (n == 13 || n == 14 || (n > 16 && n <= 19)){
+    return 0;
+  }
+  else return n;
+}
